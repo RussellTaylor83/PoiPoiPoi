@@ -2,10 +2,10 @@
 #include "FastLED.h"
 #include "sequences.h"
 
-#include "arrow.h"    //images
-#include "flower.h"
-#include "skullxbones.h"
-#include "justeat.h"
+//#include "arrow.h"    //images
+//#include "flower.h"
+//#include "skullxbones.h"
+//#include "justeat.h"
 #include "celticknot.h"
 #include "infernopattern.h"
 #include "lightning3blue.h"
@@ -49,11 +49,14 @@ void loop()
    
     
     
-    PoiSonic(10000, 150, flower, 200); //call method, length of time image displayed, number of slices in image, image name, rotation speed
-    PoiSonic(10000, 150, arrow, 200);
-    PoiSonic(10000, 77, skullxbones, 200);
-    PoiSonic(20000, 231, justeat, 200);
-    PoiSonic(10000, 70, celticknot, 200);
+  //  PoiSonic(10000, 150, flower, 200); //call method, length of time image displayed, number of slices in image, image name, rotation speed
+  //  PoiSonic(10000, 150, arrow, 200);
+   // PoiSonic(10000, 77, skullxbones, 200);
+   // PoiSonic(20000, 231, justeat, 200);
+    PoiSonic(10000, 70, celticknot, 500);
+    PoiSonic(10000, 100, infernopattern, 500);
+    PoiSonic(10000, 150, lightning3white, 500);
+    PoiSonic(10000, 125, holdinghands, 500);
   }
 }
 
