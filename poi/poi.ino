@@ -6,6 +6,7 @@
 #include "flower.h"
 #include "skullxbones.h"
 #include "justeat.h"
+#include "celticknot.h"
 
 #define NUM_BUTTONS 2
 #define NUM_LEDS 60     //number of leds in strip length on one side
@@ -44,7 +45,8 @@ void loop()
     PoiSonic(10000, 150, flower, 200);
     PoiSonic(10000, 150, arrow, 200);
     PoiSonic(10000, 77, skullxbones, 200);
-    PoiSonic(10000, 231, justeat, 200);
+    PoiSonic(20000, 231, justeat, 200);
+    PoiSonic(10000, 70, celticknot, 200);
   }
 }
 
