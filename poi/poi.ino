@@ -7,6 +7,10 @@
 #include "skullxbones.h"
 #include "justeat.h"
 #include "celticknot.h"
+#include "infernopattern.h"
+#include "lightning3blue.h"
+#include "lightning3white.h"
+#include "holdinghands.h"
 
 #define NUM_BUTTONS 2   //number of remote buttons
 #define NUM_LEDS 60     //number of leds in strip length on one side
