@@ -2,22 +2,22 @@
 #include "FastLED.h"
 #include "sequences.h"
 
-#include "arrow.h"
+#include "arrow.h"    //images
 #include "flower.h"
 #include "skullxbones.h"
 #include "justeat.h"
 #include "celticknot.h"
 
-#define NUM_BUTTONS 2
+#define NUM_BUTTONS 2   //number of remote buttons
 #define NUM_LEDS 60     //number of leds in strip length on one side
 #define DATA_PIN 2      //7 = second hardware spi data
 #define CLOCK_PIN 3     //14 = second hardware spi clock
 #define RECV_PIN 6
 
-uint16_t lastCode = 0;
+uint16_t lastCode = 0; //keeps track of last ir code
 boolean ledEnable = 1;
 
-const uint16_t BUTTON_ON = 0xFFE21D;
+const uint16_t BUTTON_ON = 0xFFE21D; //ir remote codes
 const uint16_t BUTTON_OFF = 0xFFA25D;
 
 CRGB leds[NUM_LEDS];
@@ -45,7 +45,7 @@ void loop()
    
     
     
-    PoiSonic(10000, 150, flower, 200);
+    PoiSonic(10000, 150, flower, 200); //call method, length of time image displayed, number of slices in image, image name, rotation speed
     PoiSonic(10000, 150, arrow, 200);
     PoiSonic(10000, 77, skullxbones, 200);
     PoiSonic(20000, 231, justeat, 200);
