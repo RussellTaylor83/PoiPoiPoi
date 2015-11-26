@@ -42,36 +42,27 @@ void loop()
 {
   if (ledEnable)
   {
-    //for (unsigned int x = 0; x < sizeof(Sequences[chosenSequence]); x++) {      // for each image in the chosen sequence
-        //PoiSonic(&Sequences[chosenSequence][x]);
-    //}
-        
-    //    PoiSonic(10000, 150, flower, 200); //call method, length of time image displayed, number of slices in image, image name, rotation speed
-    //    PoiSonic(10000, 150, arrows, 200);
-    //    PoiSonic(10000, 77, skullxbones, 200);
-    //    PoiSonic(20000, 231, justeat, 200);
-    //    PoiSonic(10000, 70, celticknot, 500);
-    //    PoiSonic(10000, 100, infernopattern, 500);
-    //    PoiSonic(10000, 150, lightning3white, 500);
-    //    PoiSonic(10000, 125, holdinghands, 500);
+    for (unsigned int x = 0; x < sizeof(Sequences[chosenSequence]); x++) {      // for each image in the chosen sequence
+        PoiSonic(&Sequences[chosenSequence][x]);
+    }
   }
 }
 
-//void SequenceUp() {
-//  if (chosenSequence == numberOfSequences) {
-//    chosenSequence = 0;
-//  } else {
-//    chosenSequence++;
-//  }
-//}
-//
-//void SequenceDown() {
-//  if (chosenSequence == 0) {
-//    chosenSequence = numberOfSequences;
-//  } else {
-//    chosenSequence--;
-//  }
-//}
+void SequenceUp() {
+  if (chosenSequence == numberOfSequences) {
+    chosenSequence = 0;
+  } else {
+    chosenSequence++;
+  }
+}
+
+void SequenceDown() {
+  if (chosenSequence == 0) {
+    chosenSequence = numberOfSequences;
+  } else {
+    chosenSequence--;
+  }
+}
 
 void ResetStrips()
 {

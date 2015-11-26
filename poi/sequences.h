@@ -6,11 +6,11 @@
 //#include "holdinghands.h"
 
 #include "celticknot.h"
-//#include "skullxbones.h"
+#include "skullxbones.h"
 #include "arrows.h"
-//#include "flower.h"
+#include "flower.h"
 
-//ImageStruct Sequences[2][2] = {
-//  {celticknot, flower},
-//  {skullxbones, arrows }
-//};
+ImageStruct Sequences[2][2] = {
+  {celticknot, flower},  
+  {skullxbones, arrows }
+};
