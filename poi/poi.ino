@@ -1,8 +1,8 @@
 #include <IRremote.h>
 #include <FastLED.h>
-#include <vector>
-
-#include "imagestruct.h" //has to be done like this to give the type the correct scope
+#include "extravector.h"  //See https://forum.pjrc.com/threads/23467-Using-std-vector?p=69787&viewfull=1#post69787
+#include <vector>         
+#include "imagestruct.h"  //has to be done like this to give the type the correct scope
 #include "sequences.h"
 
 #define NUM_BUTTONS   2       // number of remote buttons
